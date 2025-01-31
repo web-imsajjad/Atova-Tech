@@ -1,0 +1,716 @@
+/*********************************************************************************
+
+	Template Name: Atova Technology.
+	Note: This is style css.
+
+**********************************************************************************/
+/**************************************
+    Common Styles Start
+***************************************/
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  color: var(--color-pink);
+}
+a.edu-btn, button.edu-btn{
+    border-radius: 5px;
+    background: var(--color-pink);
+    height: 50px;
+    line-height: 50px;
+}
+a.edu-btn.btn-medium, button.edu-btn.btn-medium{
+    height: 45px;
+}
+.header-style-2 a.edu-btn.btn-medium {
+  line-height: 46px;
+}
+.edu-section-gap {
+  padding: 80px 0 !important;
+}  
+.bg-pink {
+  background-image: url(../images/bg/home-three-testimonial.jpg);
+  overflow: hidden;
+}
+.bg-color-pink{
+    background-color: var(--color-pink);
+}
+.section-title .pre-title{
+    font-size: 18px;
+    color: var(--color-pink);
+}
+a.btn-transparent, button.btn-transparent{
+    color: var(--color-pink);
+}
+a.btn-transparent::after, button.btn-transparent::after {
+    background: var(--color-pink);
+}
+a.edu-btn.btn-white, button.edu-btn.btn-white{
+    color: var(--color-pink);
+}
+a.edu-btn.btn-white:hover, button.edu-btn.btn-white:hover {
+  color: var(--color-white);
+  background: var(--color-dark);
+}
+ol li a:hover {
+  color: var(--color-pink);
+}
+ul li a:hover {
+  color: var(--color-pink);
+}
+a.edu-btn.btn-dark:hover, button.edu-btn.btn-dark:hover {
+    color: var(--color-white);
+    background: var(--color-pink);
+}
+[class^="ri-"], [class*="ri-"] {
+    line-height: 1;
+}
+.edu-pagination li a i {
+    line-height: unset;
+}
+.rn-progress-parent svg.rn-back-circle path {
+    stroke: var(--color-pink);
+}
+.rn-progress-parent::after {
+  color: var(--color-pink);
+}
+input[type="checkbox"]:checked ~ label::before, 
+input[type="radio"]:checked ~ label::before {
+  background-color: var(--color-pink);
+  border-color: var(--color-pink);
+}
+/**************************************
+    Common Styles End
+***************************************/
+
+/**************************************
+    Header Styles Start
+***************************************/
+.edu-header.header-sticky {
+   box-shadow: 0px 6px 10px rgba(255, 159, 162, 0.2);
+}
+.edu-header .logo a img{
+    max-width: fit-content;
+    max-height: 100%;
+}
+.mainmenu-nav .mainmenu > li > a {
+    color: var(--color-soft-dark);
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+.mainmenu-nav .mainmenu > li > a:hover, 
+.mainmenu-nav .mainmenu > li > a.active {
+    color: var(--color-pink) !important;
+}
+.mainmenu-nav .mainmenu li.has-droupdown .submenu{
+    padding: 10px 0;
+    border-bottom: 2px solid var(--color-pink);
+}
+.mainmenu-nav .mainmenu li.has-droupdown .submenu li a{
+    padding: 5px 20px;
+    color: var(--color-soft-dark);
+}
+.mainmenu-nav .mainmenu li.has-droupdown .submenu li a:hover {
+    color: var(--color-pink) !important;
+}
+.mainmenu-nav .mainmenu li.has-droupdown .submenu {
+    min-width: 280px;
+}
+.popup-mobile-menu .mainmenu li a{
+    color: var(--color-soft-dark);
+    font-size: 17px;
+    font-weight: 600;
+}
+.popup-mobile-menu ul li a:hover,
+.popup-mobile-menu .mainmenu li a.active{
+    color: var(--color-pink) !important;
+}
+.white-box-icon{
+    color: var(--color-pink);
+}
+/**************************************
+    Header Styles End
+***************************************/
+/**************************************
+    Main Slider Styles
+***************************************/
+.main-slider-content h2{
+    font-size: 60px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+.main-slider-content h2:hover{
+    -webkit-text-stroke-width: 0px;
+    color: var(--color-dark);
+}
+.main-slider-content p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: var(--color-soft-dark);
+    width: 80%;
+    margin-top:17px;
+}
+.main-slider-search {
+    width: 80%;
+    position: relative;
+}
+.main-slider-search input[type="search"] {
+    width: 100%;
+    height: 55px;
+    border-radius: 30px;
+    border: 0.5px solid #DADADA;
+    box-shadow: 0px 4px 4px rgba(170, 160, 160, 0.25);
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    outline: none;
+    font-size: 18px;
+}
+.main-slider-search input[type="search"]::placeholder {
+    color: var(--color-pink);
+}
+.main-slider-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FF555A;
+    mix-blend-mode: normal;
+    border: none;
+    height: 55px;
+    width: 80px;
+    border-radius: 0px 30px 30px 0px;
+    color: #fff;
+}
+.main-slider .slick-dots li.slick-active button:before {
+    background: #ff2929;
+    border:1px solid #ff2929;
+}
+.main-slider .slick-dots li button:before {
+    font-size: 0;
+    color: transparent;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.search-icon img{
+    padding: 0px 18px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+.banner-style-4 .shape-image.shape-image-1 {
+    left: 0px;
+    top: 28px;
+}
+.banner-style-4 .shape-image.shape-image-2 {
+    right: 40%;
+    top: 50px;
+}
+.banner-style-4 .shape-image.shape-image-3 {
+    right: 0px;
+    top: 70%;
+}
+.banner-style-4 .shape-image.shape-image-4 {
+    right: 30px;
+    bottom: 60px;
+}
+.banner-style-4 .shape-image.shape-image-5 {
+    left: 440px;
+    bottom: 270px;
+}
+.banner-style-4 .shape-image.shape-image-6 {
+    left: 0px;
+    bottom: 20px;
+}
+@media (max-width: 768px){
+    .slider-area.banner-style-4 {
+        margin-top: 20px;
+    }
+    .main-slider-content p{
+        width: 100%;
+    }
+    .main-slider-search {
+        width: 100%;
+    }
+}
+/**************************************
+    Main Slider Styles End
+***************************************/
+/**************************************
+    Why Choose US Styles Start
+***************************************/
+.video-play-btn.color-secondary.size-80 .play-icon::before {
+    border-left: 21px solid var(--color-pink);
+}
+.home-three-about .shape-image.shape-image-1 {
+    top: 60px;
+    right: -17px;
+    animation: eduvibe-vsm-y-reverse-move 4s alternate infinite linear;
+}
+.home-three-about .shape-image.shape-image-2 {
+    bottom: 30px;
+    right: -17px;
+    animation: eduvibe-vsm-y-reverse-move 4s alternate infinite linear;
+}
+/**************************************
+    Why Choose US Styles End
+***************************************/
+/**************************************
+    Features Cources Styles Start
+***************************************/
+.edu-course-area .nav-pills .nav-link {
+  height: 36px;
+  padding: 0 20px;
+  width: auto;
+  border: 0 none;
+  background: #F5F5F5;
+  border-radius: 3px;
+  color: var(--color-heading);
+  margin: 7.5px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.edu-course-area .nav-pills .nav-link.active, 
+.edu-course-area .nav-pills .nav-link:hover {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+.edu-card.card-type-3 .inner .content {
+    padding: 30px 20px 20px;
+}
+.edu-meta.meta-01 li {
+    font-size: 14px;
+}
+.edu-rating span{
+    font-size: 14px;
+}
+.edu-rating .icon-Star{
+    font-size: 14px;
+}
+.edu-card.card-type-3 .inner .content .card-top {
+    margin-bottom: 10px;
+}
+.edu-card.card-type-3 .inner .content .title {
+    margin-bottom: 10px;
+}
+.eduvibe-status.status-03{
+    background: var(--color-pink);
+}
+.filters-button-group button.is-checked, .filters-button-group button:hover {
+    background: var(--color-pink);
+    olor: var(--color-white);
+}
+.eduvibe-home-two-course .shape-image.shape-image-1 {
+    top: 10px;
+    left: 0px;
+    animation: eduvibe-vsm-y-move 4.5s alternate infinite linear;
+}
+.eduvibe-home-two-course .shape-image.shape-image-2 {
+    top: 10px;
+    right: -17px;
+    animation: eduvibe-vsm-y-move 4.5s alternate infinite linear;
+}
+.eduvibe-home-two-course .shape-image.shape-image-3 {
+    bottom: -30px;
+    right: -17px;
+    animation: eduvibe-vsm-y-reverse-move 4s alternate infinite linear;
+}
+.eduvibe-home-two-course .shape-image.shape-image-4 {
+    bottom: -50px;
+    left: -38px;
+    animation: eduvibe-sm-x-move 4s alternate infinite linear;
+}
+/**************************************
+    Features Cources Styles End
+***************************************/
+/**************************************
+    About US Styles Start
+***************************************/
+ .checkout-page-style .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 15px;
+  border-bottom: 0px solid transparent;
+  margin-bottom: 20px;
+}
+.checkout-form{
+    background: var(--color-white);
+    padding: 15px;
+    border-radius: 10px;
+}
+.checkout-page-style  .input-box{
+    margin-bottom: 12px;
+}
+.checkout-page-style input{
+    height: 50px;
+    border: 1px solid #D2C1C1;
+    background: transparent;
+}
+.checkout-page-style input:focus, .checkout-page-style select:focus {
+    border-color: var(--color-pink); 
+}
+.checkout-page-style select{
+    height: 50px;
+    border: 1px solid #D2C1C1;
+}
+.checkout-page-style .input-submit{
+    width: 100%;
+    height: 50px;
+    background: var(--color-pink);
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--color-white);
+    margin-top: 0px;
+}
+/**************************************
+    About US Styles End
+***************************************/
+/**************************************
+    Partner & Accreditation Area Start
+***************************************/
+/*.edu-card.card-type-3 {
+    box-shadow: 0px 1px 1px var(--color-pink),0px -1px 1px var(--color-pink);
+}*/
+.partner-accreditiation .nav-pills .nav-link {
+  height: 36px;
+  padding: 0 20px;
+  width: auto;
+  border: 0 none;
+  background: #F5F5F5;
+  border-radius: 3px;
+  color: var(--color-heading);
+  margin: 7.5px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.partner-accreditiation .nav-pills .nav-link.active, 
+.partner-accreditiation .nav-pills .nav-link:hover {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+/**************************************
+    Partner & Accreditation Area End
+***************************************/
+/**************************************
+    Team Area Start
+***************************************/
+.eduvibe-home-four-team {
+    padding: 60px 0 60px;
+}
+.team-share-info a{
+    color: var(--color-pink);
+}
+.team-share-info a:hover {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+.edu-instructor-1:hover .edu-instructor-info .desc {
+    color: var(--color-pink);
+}
+/**************************************
+    Team Area End
+***************************************/
+/**************************************
+    Feedback Area Start
+***************************************/
+.testimonial-card-box .inner .client-info .content .designation {
+    color: var(--color-pink);
+    font-weight: 500;
+}
+.slick-arrow-style-2 .slide-arrow{
+    color: var(--color-pink);
+}
+.slick-arrow-style-2 .slide-arrow:hover {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+/**************************************
+    Feedback Area End
+***************************************/
+/**************************************
+    Newsletter Area Start
+***************************************/
+.newsletter-form-style-1 .input-box .send-button i {
+    font-size: 20px;
+    color: var(--color-pink);
+}
+/**************************************
+    Newsletter Area End
+***************************************/
+/**************************************
+    Footer Area Start
+***************************************/
+.eduvibe-footer-one {
+    background: #00274D;
+}
+.footer-style-default .footer-top {
+    padding: 60px 0px 30px 0px;
+}
+.footer-style-default .widget-title{
+    color: var(--color-pink);
+}
+.social-share li a:hover {
+    background: var(--color-pink);
+}
+.footer-style-default .widget-title {
+    line-height: 10px;
+}
+.footer-style-default .description{
+    text-align: justify;
+}
+.footer-style-default .edu-footer-widget .footer-link li + li {
+    margin-top: 12px;
+}
+.footer-style-default .edu-footer-widget .footer-link li:hover a {
+  color: var(--color-pink);
+}
+.footer-style-default .information-list li + li {
+    margin-top: 12px;
+}
+.footer-style-default .information-list li:hover a {
+    color: var(--color-pink);
+}
+.copyright-default{
+    border-top: 1px solid;
+}
+.copyright-default p a:hover {
+    color: var(--color-pink);
+}
+.copyright-default p{
+    margin: 20px 0px;
+}
+/**************************************
+    Footer Area End
+***************************************/
+/**************************************
+    Login & Register Area Start
+***************************************/
+.login-register-page-wrapper .login-form-box .lost-password {
+    color: var(--color-dark);
+}
+.login-register-page-wrapper .login-form-box .lost-password:hover {
+    color: var(--color-pink);
+}
+/**************************************
+    Login & Register Area End
+***************************************/
+/**************************************
+    Product Details Area Start
+***************************************/
+.course-details-content .edu-course-tab .nav-item .nav-link.active, 
+.course-details-content .edu-course-tab .nav-item .nav-link:hover {
+    color: var(--color-pink);
+}
+.course-details-content .edu-course-tab .nav-item .nav-link::after {
+    background: var(--color-pink);
+}
+.edu-accordion-02 .edu-accordion-item.bg-active .edu-accordion-button {
+    color: var(--color-pink);
+}
+.edu-accordion-02 .edu-accordion-item.bg-active .edu-accordion-button::after {
+    color: var(--color-pink);
+}
+.course-author-wrapper .author-content .subtitle{
+    color: var(--color-pink);
+}
+.social-share.border-style li a{
+    color: var(--color-pink);
+}
+.social-share.border-style li a:hover {
+    background: var(--color-pink);
+    border-color: var(--color-pink);
+}
+.eduvibe-widget-details .widget-content ul li i{
+    color: var(--color-pink);
+}
+a.edu-btn.btn-bg-alt, button.edu-btn.btn-bg-alt {
+    line-height: 50px;
+    color: var(--color-pink);
+    background: rgba(82, 95, 225, 0.1);
+    border: 1px solid var(--color-pink);
+}
+a.edu-btn.btn-bg-alt:hover, button.edu-btn.btn-bg-alt:hover {
+    color: var(--color-white);
+    background: var(--color-pink);
+    border-color: var(--color-pink);
+}
+.video-play-btn .play-icon::before {
+    border-left: 17px solid var(--color-pink);
+}
+/**************************************
+    Product Details Area End
+***************************************/
+/**************************************
+    Event List Area Start
+***************************************/
+.edu-pagination li.active a, .edu-pagination li.active button, 
+.edu-pagination li:hover a, .edu-pagination li:hover button {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+.edu-event-details .content{
+    margin-top: 0px;
+}
+.eduvibe-sidebar {
+    margin-top: 0px;
+}
+.list-style-1 li i{
+    color: var(--color-pink);
+}
+/**************************************
+    Event List Area End
+***************************************/
+/**************************************
+    Checkout page Area Start
+***************************************/
+.checkout-page-style .edu-check-order input{
+    height: 40px;
+    padding: 0 10px;
+}
+.tag-list a:hover {
+  background: var(--color-pink) !important;
+  color: var(--color-white);
+}
+.edu-blog-widget-2.widget-search .blog-search .search-button{
+    color: var(--color-pink);
+}
+.testimonial-card-box .inner{
+    margin-bottom: 0px;
+}
+.testimonial-card-box .inner::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px;
+  border-color: transparent transparent transparent var(--color-white);
+  top: calc(99% - 1px);
+  transform: rotate(90deg);
+  z-index: 2;
+  border-bottom-right-radius: 4px;
+}
+.edu-slick-arrow-top .slide-arrow{
+    color: var(--color-pink);
+}
+.edu-slick-arrow-top .slide-arrow:hover {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+.edu-slick-button .slick-dots li.slick-active::before {
+  border-color: var(--color-pink);
+  opacity: 1;
+  transform: scale(1);
+}
+.edu-slick-button .slick-dots li.slick-active button {
+  background: var(--color-pink);
+}
+.edu-slick-button .slick-dots li button {
+  background: rgba(255, 86, 91, .5);
+}
+/**************************************
+    Checkout page Area End
+***************************************/
+
+/**************************************
+    instructor page Area Start
+***************************************/
+.progress .progress-bar {
+    background-color: var(--color-pink);
+}
+.instructor-profile-left .inner .content .subtitle{
+    color: var(--color-pink);
+}
+.social-share.bg-transparent li a {
+    color: var(--color-pink);
+}
+.social-share.bg-transparent li a:hover {
+    border-color: var(--color-pink);
+    background: var(--color-pink);
+}
+/**************************************
+    instructor page Area End
+***************************************/
+
+/**************************************
+    about us page Area Start
+***************************************/
+.video-play-btn.btn-secondary-color {
+    background: var(--color-pink);
+}
+.video-play-btn.btn-secondary-color::before {
+    border-color: var(--color-pink);
+}
+.video-play-btn.btn-secondary-color::after {
+    border-color: var(--color-pink);
+}
+/**************************************
+    about us page Area Start
+***************************************/
+
+/**************************************
+    Faq page Area Start
+***************************************/
+.edu-tab-nav li.nav-item button.nav-link.active {
+    background: var(--color-pink);
+}
+/**************************************
+    Faq page Area End
+***************************************/
+/**************************************
+    Contact us Area Start
+***************************************/
+.contact-address-card-1:hover {
+    background: var(--color-pink);
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.rwt-dynamic-form .form-group input:focus {
+    border-color: var(--color-pink);
+}
+.rwt-dynamic-form .form-group textarea:focus {
+    border-color: var(--color-pink);
+}
+/**************************************
+    Contact us Area End
+***************************************/
+/**************************************
+    Comming Soon Area Start
+***************************************/
+.newsletter-form-style-2 input{
+    height: 50px;
+}
+/**************************************
+    Comming Soon Area End
+***************************************/
+/**************************************
+    Services Page Area Start 
+***************************************/
+.style-variation2 .blockquote-style-1 {
+    background: #F5F5F5;
+    border-radius: 4px;
+    border-left: 3px solid var(--color-pink);
+    color: var(--color-heading);
+}
+.blog-pagination-list.style-variation-2:hover {
+    background: #FFFFFF;
+    border-color: var(--color-pink);
+    box-shadow: 0px 8px 25px rgb(0 0 0 / 6%);
+}
+.comment-form-style-1 input:focus, .comment-form-style-1 textarea:focus {
+    border-color: var(--color-pink);
+}
+/**************************************
+    Services Page Area End
+***************************************/
