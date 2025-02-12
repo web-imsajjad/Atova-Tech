@@ -381,6 +381,13 @@ select[name="blood_group"] {
   }
   .input-data input[type="file"]::-webkit-file-upload-button,
   input[type="file"]::file-selector-button {
-    margin-left: 350px;
+    margin-left: 285px;
+  }
+  .step {
+    visibility: hidden;
+  }
+
+  .step.active-step {
+    visibility: visible;
   }
 }
