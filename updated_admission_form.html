@@ -486,7 +486,7 @@
 
         <!-- identity -->
 
-        <div class="container wrapper formContainer col-lg-12 step active-step">
+        <div class="container wrapper formContainer col-lg-12 step ">
           <div class="row formItem">
             <h5 class="title text-center">Upload Identity</h5>
 
@@ -533,7 +533,7 @@
 
         <!-- Payment Details -->
 
-        <div class="col-lg-6 container wrapper formContainer step">
+        <div class="col-lg-6 container wrapper formContainer step ">
           <div class="admission-page-style">
             <div class="payment-details">
               <h5 class="title text-center">Payment Details</h5>
@@ -928,77 +928,13 @@
             courseSelect.classList.replace('col-sm-6', 'col-sm-12');
             bloodGroup.classList.replace('col-sm-6', 'col-sm-3');
           }
-        }, 10);  // Debounce to trigger after resizing stops
+        }, 10); 
       };
 
       window.addEventListener('resize', handleScreenSizeChange);
-      handleScreenSizeChange(); // Initial call to set layout correctly
+      handleScreenSizeChange(); 
 
-      // version-1
-
-      // // Stepper Component
-      // const Stepper = (() => {
-      //   const DOM = {
-      //     steps: document.querySelectorAll(".step"),
-      //     nextButtons: document.querySelectorAll(".btn-next"),
-      //     prevButtons: document.querySelectorAll(".btn-prev"),
-      //     stepNumbers: document.querySelectorAll(".step-number"),
-      //     progressBar: document.getElementById("progressBar")
-      //   };
-
-      //   let currentStepIndex = 0;
-      //   const totalSteps = DOM.steps.length;
-      //   const progressStep = 100 / (totalSteps - 1);
-
-      //   // Single event delegation for navigation
-      //   document.body.addEventListener("click", (event) => {
-      //     if (event.target.closest(".btn-next")) handleNext();
-      //     else if (event.target.closest(".btn-prev")) handlePrev();
-      //   });
-
-      //   const handleNext = () => {
-      //     if (validateStep() && currentStepIndex < totalSteps - 1) {
-      //       currentStepIndex++;
-      //       updateDisplay();
-      //     }
-      //   };
-
-      //   const handlePrev = () => {
-      //     if (currentStepIndex > 0) {
-      //       currentStepIndex--;
-      //       updateDisplay();
-      //     }
-      //   };
-
-      //   const updateDisplay = () => {
-      //     DOM.steps.forEach((step, i) => step.classList.toggle("active-step", i === currentStepIndex));
-
-      //     DOM.stepNumbers.forEach((step, i) => step.classList.toggle("active", i <= currentStepIndex));
-
-      //     DOM.progressBar.style.width = `${currentStepIndex * progressStep}%`;
-      //   };
-
-      //   const validateStep = () => {
-      //     const inputs = DOM.steps[currentStepIndex].querySelectorAll("input");
-      //     return Array.from(inputs).every(input => input.checkValidity());
-      //   };
-
-      //   updateDisplay();
-
-      //   return {
-      //     goToStep: (index) => {
-      //       if (index >= 0 && index < totalSteps) {
-      //         currentStepIndex = index;
-      //         updateDisplay();
-      //       }
-      //     }
-      //   };
-      // })();
-
-
-      //  version-2
-
-      const Stepper = (() => {
+       const Stepper = (() => {
         const DOM = {
           steps: document.querySelectorAll(".step") || [],
           nextButtons: document.querySelectorAll(".btn-next") || [],
@@ -1007,7 +943,10 @@
           progressBar: document.getElementById("progressBar") || document.createElement("div")
         };
 
-        let currentStepIndex = 0;
+        // Check for initially active step
+        let currentStepIndex = Array.from(DOM.steps).findIndex(step => step.classList.contains("active-step"));
+        currentStepIndex = currentStepIndex >= 0 ? currentStepIndex : 0;
+
         const totalSteps = DOM.steps.length;
         const progressStep = totalSteps > 1 ? 100 / (totalSteps - 1) : 0;
 
@@ -1043,7 +982,9 @@
               step.setAttribute("aria-current", i === currentStepIndex);
             });
 
-            DOM.progressBar.style.width = `${currentStepIndex * progressStep}%`;
+            // Ensure progress is between 0 and 100
+            const progress = Math.min(Math.max(currentStepIndex * progressStep, 0), 100);
+            DOM.progressBar.style.width = `${progress}%`;
           });
         };
 
@@ -1054,12 +995,11 @@
           inputs.forEach(input => {
             const isValid = input.checkValidity();
             input.classList.toggle("input-invalid", !isValid);
-            if (!isValid) allValid = false;
           });
 
           return allValid;
         };
- 
+
         updateDisplay();
 
         return {
@@ -1071,7 +1011,8 @@
           },
           currentStep: () => currentStepIndex
         };
-      })(); 
+      })();
+
     
 
     });
