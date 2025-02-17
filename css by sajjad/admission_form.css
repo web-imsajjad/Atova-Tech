@@ -1,3 +1,4 @@
+
 .step {
   display: none;
   transform: translateX(50px);
@@ -236,17 +237,21 @@ select[name="blood_group"] {
 }
 .graphImg {
   position: absolute;
-  z-index: -1;
+  z-index: -10;
+}
+.center-container{
+  position: relative;
+  width: 50vw;
 }
 .shapeImg1 {
-  max-width: 10%;
-  left: 290px;
-  top: 400px;
+  max-width: 17%;
+  left: -10%;
+  top: -12%;
 }
 .shapeImg2 {
-  max-width: 10%;
-  top: 750px;
-  right: 280px;
+  max-width: 20%;
+  bottom: -8%;
+  right: -8%;
 }
 .ri-eye-off-fill {
   position: absolute;
@@ -333,20 +338,37 @@ select[name="blood_group"] {
   background: #b428ac;
   color: #fff;
 }
-
+.other-steps{
+  margin-left: -15px;
+}
+.comment-form-consent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.comment-form-consent input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+.comment-form-consent label {
+  cursor: pointer;
+  user-select: none;
+}
 @media only screen and (max-width: 576px) {
   .wrapper {
     overflow: hidden;
     display: block;
   }
   .shapeImg1 {
-    left: -25px;
-    top: 300px;
-    max-width: 30%;
+    left: -10%;
+    top: -10%;
+    max-width: 25%;
   }
   .shapeImg2 {
-    right: -35px;
-    top: 650px;
+    right: -10%;
+    bottom: 0%;
     max-width: 30%;
   }
   .col-gender {
@@ -361,6 +383,10 @@ select[name="blood_group"] {
   }
   .select2Plugin {
     width: 100% !important;
+  }
+  .center-container {
+    position: relative;
+    width: 90vw;
   }
   .formContainer {
     width: 90vw !important;
