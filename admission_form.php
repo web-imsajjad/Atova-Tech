@@ -1,282 +1,21 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+  
+  <?php $pageTitle= 'Admission Form'; 
+  include('./module/head.php') ?>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Admission Registration</title>
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="">
-  <meta name="keywords" content="Atova, Atova Technology">
-  <meta name="author" content="Atova Technology">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets\images\favicon.png">
-
-  <!-- CSS
-    ============================================ -->
-  <!-- remixicon cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="assets\css\vendor\bootstrap.min.css">
-  <link rel="stylesheet" href="assets\css\vendor\remixicon.css">
-  <link rel="stylesheet" href="assets\css\vendor\eduvibe-font.css">
-  <link rel="stylesheet" href="assets\css\vendor\magnifypopup.css">
-  <link rel="stylesheet" href="assets\css\vendor\slick.css">
-  <link rel="stylesheet" href="assets\css\vendor\odometer.css">
-  <link rel="stylesheet" href="assets\css\vendor\lightbox.css">
-  <link rel="stylesheet" href="assets\css\vendor\animation.css">
-  <link rel="stylesheet" href="assets\css\vendor\jqueru-ui-min.css">
-  <link rel="stylesheet" href="assets\css\style.css">
-  <link rel="stylesheet" href="assets\css\custom-style.css">
-  <!-- css by Sajjad -->
-  <link rel="stylesheet" href="/css by sajjad/admission_form.css">
-
-
-  <!-- international telephone number css cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.8.1/build/css/intlTelInput.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
-</head>
-
-
 <body>
-  <div class="main-wrapper">
-    <!-- Header Section Start -->
-    <header class="edu-header header-sticky disable-transparent header-style-2 header-default">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-2 col-md-6 col-6">
-            <div class="logo">
-              <a href="index.html">
-                <img class="logo-light" src="assets\images\logo\logo.png" alt=".." title="..">
-              </a>
-            </div>
-          </div>
-          <div class="d-none d-xl-block col-xl-8">
-            <nav class="mainmenu-nav d-none d-lg-block">
-              <ul class="mainmenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li class="has-droupdown"><a href="#courses">Courses</a>
-                  <ul class="submenu">
-                    <li><a href="course-list.html">Web Design & Development</a></li>
-                    <li><a href="course-list.html">Networking</a></li>
-                    <li><a href="course-list.html">Graphics & UI Design</a></li>
-                    <li><a href="course-list.html">Digital Marketing</a></li>
-                    <li><a href="course-list.html">Computer Fundamentals</a></li>
-                  </ul>
-                </li>
-                <li class="has-droupdown"><a href="#">Our Story</a>
-                  <ul class="submenu">
-                    <li><a href="story-success.html">Success Story</a></li>
-                    <li><a href="story-jobplacement.html">Job Placement</a></li>
-                  </ul>
-                </li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li class="has-droupdown"><a href="#">Services</a>
-                  <ul class="submenu">
-                    <li><a href="services.html">Web Design & Development</a></li>
-                    <li><a href="services.html">Smart Surveillance Solution</a></li>
-                    <li><a href="services.html">IT Infrastructure & Support</a></li>
-                    <li><a href="services.html">Network Solutions Services</a></li>
-                    <li><a href="services.html">Graphic Design Services</a></li>
-                    <li><a href="services.html">Software & Applications</a></li>
-                    <li><a href="services.html">IT Consultancy Services</a></li>
-                    <li><a href="services.html">Business Email Hosting</a></li>
-                    <li><a href="services.html">UX/UI Design Services</a></li>
-                    <li><a href="services.html">Digital Marketing</a></li>
-                    <li><a href="services.html">Email Marketing</a></li>
-                    <li><a href="services.html">SMS Marketing</a></li>
-                  </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li class="has-droupdown"><a href="#events">Event</a>
-                  <ul class="submenu">
-                    <li><a href="event-list.html">Upcomming Event</a></li>
-                    <li><a href="event-list.html">Runnging Event</a></li>
-                    <li><a href="event-list.html">Event's Archove</a></li>
-                  </ul>
-                </li>
-                <li class="has-droupdown"><a href="#about-us">About</a>
-                  <ul class="submenu">
-                    <li><a href="about-us.html">About Atova</a></li>
-                    <li><a href="atova-teams.html">Atova's Team</a></li>
-                    <li><a href="atova-faculty.html">Atova's Faculty</a></li>
-                    <!-- <li><a href="atova-gallery.html">Atova's Gallery</a></li> -->
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-xl-2 col-md-6 col-6">
-            <div class="header-right d-flex justify-content-end">
-              <div class="header-menu-bar">
-                <!-- <div class="quote-icon quote-search">
-                                    <button class="white-box-icon search-trigger header-search"><i class="ri-search-line"></i></button>
-                                </div> -->
-                <div class="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
-                  <a class="edu-btn btn-medium left-icon header-button" href="login.html"><i
-                      class="ri-user-line"></i>Login</a>
-                </div>
-                <!-- <div class="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
-                                    <a class="edu-btn btn-medium left-icon header-button" href="register.html"><i class="ri-user-add-line"></i>Register</a>
-                                </div> -->
-                <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                  <a class="white-box-icon" href="login.html"><i class="ri-user-line"></i></a>
-                </div>
-                <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                  <a class="white-box-icon" href="register.html"><i class="ri-user-add-line"></i></a>
-                </div>
-              </div>
 
-              <div class="mobile-menu-bar ml--15 ml_sm--5 d-block d-xl-none">
-                <div class="hamberger">
-                  <button class="white-box-icon hamberger-button header-menu">
-                    <i class="ri-menu-line"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header Section End -->
+<div class="main-wrapper">
+  <?php include('./module/header.php')?>
 
-    <!-- Mobile Navigation Start -->
-    <div class="popup-mobile-menu">
-      <div class="inner">
-        <div class="header-top">
-          <div class="logo">
-            <a href="index.html">
-              <img src="assets\images\logo\logo.png" alt=".." title="..">
-            </a>
-          </div>
-          <div class="close-menu">
-            <button class="close-button">
-              <i class="ri-close-line"></i>
-            </button>
-          </div>
-        </div>
-        <ul class="mainmenu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li class="has-droupdown"><a href="#courses">Courses</a>
-            <ul class="submenu">
-              <li><a href="course-list.html">Web Design & Development</a></li>
-              <li><a href="course-list.html">Networking</a></li>
-              <li><a href="course-list.html">Graphics & UI Design</a></li>
-              <li><a href="course-list.html">Digital Marketing</a></li>
-              <li><a href="course-list.html">Computer Fundamentals</a></li>
-            </ul>
-          </li>
-          <li class="has-droupdown"><a href="#">Our Story</a>
-            <ul class="submenu">
-              <li><a href="story-success.html">Success Story</a></li>
-              <li><a href="story-jobplacement.html">Job Placement</a></li>
-            </ul>
-          </li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li class="has-droupdown"><a href="#">Services</a>
-            <ul class="submenu">
-              <li><a href="services.html">Web Design & Development</a></li>
-              <li><a href="services.html">Smart Surveillance Solution</a></li>
-              <li><a href="services.html">IT Infrastructure & Support</a></li>
-              <li><a href="services.html">Network Solutions Services</a></li>
-              <li><a href="services.html">Graphic Design Services</a></li>
-              <li><a href="services.html">Software & Applications</a></li>
-              <li><a href="services.html">IT Consultancy Services</a></li>
-              <li><a href="services.html">Business Email Hosting</a></li>
-              <li><a href="services.html">UX/UI Design Services</a></li>
-              <li><a href="services.html">Digital Marketing</a></li>
-              <li><a href="services.html">Email Marketing</a></li>
-              <li><a href="services.html">SMS Marketing</a></li>
-            </ul>
-          </li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="has-droupdown"><a href="#events">Event</a>
-            <ul class="submenu">
-              <li><a href="event-list.html">Upcomming Event</a></li>
-              <li><a href="event-list.html">Runnging Event</a></li>
-              <li><a href="event-list.html">Event's Archove</a></li>
-            </ul>
-          </li>
-          <li class="has-droupdown"><a href="#about-us">About</a>
-            <ul class="submenu">
-              <li><a href="about-us.html">About Atova</a></li>
-              <li><a href="atova-teams.html">Atova's Team</a></li>
-              <li><a href="atova-faculty.html">Atova's Faculty</a></li>
-              <!-- <li><a href="atova-gallery.html">Atova's Gallery</a></li> -->
-              <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Mobile Navigation End -->
-
-    <!-- Start Search Popup  -->
-    <div class="edu-search-popup">
-      <div class="close-button">
-        <button class="close-trigger"><i class="ri-close-line"></i></button>
-      </div>
-      <div class="inner">
-        <form class="search-form" action="#">
-          <input type="text" class="eduvibe-search-popup-field" placeholder="Search Here...">
-          <button class="submit-button"><i class="icon-search-line"></i></button>
-        </form>
-      </div>
-    </div>
-    <!-- End Search Popup  -->
-    <!-- <div class="edu-breadcrumb-area breadcrumb-style-1 ptb--60 ptb_md--40 ptb_sm--40 bg-image">
-      <div class="container eduvibe-animated-shape">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="breadcrumb-inner text-start">
-              <div class="page-title">
-                <h3 class="title">Registration</h3>
-              </div>
-              <nav class="edu-breadcrumb-nav">
-                <ol class="edu-breadcrumb d-flex justify-content-start liststyle">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="separator"><i class="ri-arrow-drop-right-line"></i></li>
-                  <li class="breadcrumb-item active" aria-current="page">Registration</li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-          <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-            <div class="shape-image shape-image-1">
-              <img src="assets\images\shapes\shape-11-07.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-2">
-              <img src="assets\images\shapes\shape-01-02.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-3">
-              <img src="assets\images\shapes\shape-03.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-4">
-              <img src="assets\images\shapes\shape-13-12.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-5">
-              <img src="assets\images\shapes\shape-36.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-6">
-              <img src="assets\images\shapes\shape-05-07.png" alt="Shape Thumb">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
-    <form action="http://localhost:8000/register-admission" method="POST" enctype="multipart/form-data">
+   <form action="http://localhost:8000/register-admission" method="POST" enctype="multipart/form-data">
       <h3 class="title text-center container mt-4"><span style="color: #FF555B;">Admission</span> Form</h3>
 
       <div class="stepper container formContainer">
@@ -290,7 +29,7 @@
       
       
       <div class="center-container container">
-        <img class="shapeImg1 graphImg formc" src="/assets/images/admission_Img/Noodle 1.png" alt="">
+        <img class="shapeImg1 graphImg formc" src="./assets/images/admission_Img/Noodle 1.png" alt="">
         <img class="shapeImg2 graphImg" src="/assets/images/admission_Img/Noodle 2.png" alt="">
 
           <div id="multi-step-form">
@@ -619,150 +358,14 @@
       </div>
     </form>
 
+  <?php include('./module/footer.php') ?>
+</div>
 
-    <!-- Footer Area -->
-    <footer class="eduvibe-footer-one edu-footer footer-style-default">
-      <div class="footer-top">
-        <div class="container eduvibe-animated-shape">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-              <div class="edu-footer-widget">
-                <div class="logo">
-                  <a href="index.html">
-                    <img class="logo-light" src="assets\images\logo\logo.png" alt=".." title="..">
-                  </a>
-                </div>
-                <p class="description">It is a long established fact that a reader will be distracted by
-                  the readable content of a page when looking at its layout. The point of using Lorem
-                  Ipsum.</p>
-                <ul class="social-share">
-                  <li><a href="#"><i class="icon-Fb"></i></a></li>
-                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                  <li><a href="#"><i class="icon-youtube"></i></a></li>
-                  <li><a href="#"><i class="icon-Twitter"></i></a></li>
-                </ul>
-              </div>
-            </div>
+<?php include('./module/scroll_to_top.php') ?>
 
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-              <div class="edu-footer-widget explore-widget">
-                <h5 class="widget-title">Navivation</h5>
-                <div class="inner">
-                  <ul class="footer-link link-hover">
-                    <li><a href="about-us.html"><i class="ri-speed-fill"></i>About Us</a></li>
-                    <li><a href="index.html"><i class="ri-speed-fill"></i>Home</a></li>
-                    <li><a href="event-list.html"><i class="ri-speed-fill"></i>Upcoming Events</a>
-                    </li>
-                    <li><a href="blog.html"><i class="ri-speed-fill"></i>Blog & News</a></li>
-                    <li><a href="faq.html"><i class="ri-speed-fill"></i>FAQ</a></li>
-                    <li><a href="privacy-policy.html"><i class="ri-speed-fill"></i>Privacy
-                        Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-              <div class="edu-footer-widget quick-link-widget">
-                <h5 class="widget-title">Our Cources</h5>
-                <div class="inner">
-                  <ul class="footer-link link-hover">
-                    <li><a href="contact-us.html"><i class="ri-speed-fill"></i>Contact Us</a></li>
-                    <li><a href="v.html"><i class="ri-speed-fill"></i>Team</a></li>
-                    <li><a href="atova-faculty.html"><i class="ri-speed-fill"></i>Faculty</a></li>
-                    <li><a href="faq.html"><i class="ri-speed-fill"></i>FAQ</a></li>
-                    <li><a href="gallery.html"><i class="ri-speed-fill"></i>Gallery</a></li>
-                    <li><a href="terms-and-conditions.html"><i class="ri-speed-fill"></i>Terms &
-                        Conditions</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-              <div class="edu-footer-widget">
-                <h5 class="widget-title">Contact Info</h5>
-                <div class="inner">
-                  <div class="widget-information">
-                    <ul class="information-list">
-                      <li><i class="icon-map-pin-line"></i>3th floor,Satmasjid Super Market
-                        Mohammadpur, Bus Stand, Dhaka- 1207
-                      </li>
-                      <li><i class="icon-phone-fill"></i><a href="tel:+88 0258150042">+88
-                          0258150042</a></li>
-                      <li><i class="ri-cellphone-line"></i><a href="tel:+88 01713 615831">+88
-                          01713 615831</a></li>
-                      <li><i class="icon-mail-line-2"></i><a target="_blank"
-                          href="mailto:atovatechnology@gmail.com">atovatechnology@gmail.com</a>
-                      </li>
-                      <li><i class="ri-home-heart-line"></i><a target="_blank"
-                          href="https://atovatach.com">atovatach.com</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="shape-dot-wrapper shape-wrapper d-md-block d-none">
-            <div class="shape-image shape-image-1">
-              <img src="assets\images\shapes\shape-21-01.png" alt="Shape Thumb">
-            </div>
-            <div class="shape-image shape-image-2">
-              <img src="assets\images\shapes\shape-35.png" alt="Shape Thumb">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-area copyright-default">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="inner text-center">
-                <p>Copyright 2022 <a href="index.html">Atova Technology</a>. All Rights Reserved</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer Area  -->
-  </div>
-  <div class="rn-progress-parent">
-    <svg class="rn-back-circle svg-inner" width="100%" height="100%" viewbox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-    </svg>
-  </div>
-
-  <!-- JS
-        ============================================ -->
-  <!-- Modernizer JS -->
-  <script src="assets\js\vendor\modernizr.min.js"></script>
-  <!-- jQuery JS -->
-  <script src="assets\js\vendor\jquery.js"></script>
-  <script src="assets\js\vendor\bootstrap.min.js"></script>
-  <script src="assets\js\vendor\sal.min.js"></script>
-  <script src="assets\js\vendor\backtotop.js"></script>
-  <script src="assets\js\vendor\magnifypopup.js"></script>
-  <script src="assets\js\vendor\slick.js"></script>
-  <script src="assets\js\vendor\countdown.js"></script>
-  <script src="assets\js\vendor\jquery-appear.js"></script>
-  <script src="assets\js\vendor\odometer.js"></script>
-  <script src="assets\js\vendor\isotop.js"></script>
-  <script src="assets\js\vendor\imageloaded.js"></script>
-  <script src="assets\js\vendor\lightbox.js"></script>
-  <script src="assets\js\vendor\wow.js"></script>
-  <script src="assets\js\vendor\paralax.min.js"></script>
-  <script src="assets\js\vendor\paralax-scroll.js"></script>
-  <script src="assets\js\vendor\jquery-ui.js"></script>
-  <script src="assets\js\vendor\tilt.jquery.min.js"></script>
-  <!-- Main JS -->
-  <script src="assets\js\main.js"></script>
-  <!-- international telephone number js -->
+  <?php include('./module/common_js.php')?>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.8.1/build/js/intlTelInput.min.js"></script>
-  <!-- JS from Sajjad -->
-  <script src="/admission_form.js"></script>
-
  <script>
  (function () {
   
@@ -932,5 +535,5 @@
 </script>
 
 </body>
-
 </html>
+
